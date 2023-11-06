@@ -7,6 +7,7 @@
 
 .animation(nil) // 15에서 사라지는 modifier라 위 modifier 사용
 ```
+
   
 🥐 .strikethrough()
 ```swift
