@@ -15,3 +15,23 @@
 ```
 
 <s>strikethrough</s> 를 bool 조건에 따라 나타나도록 함. 
+
+
+🥐 
+```swift
+HStack {
+    
+    Button {
+    } label: {
+    }
+    
+    Text("1")
+        .frame(maxHeight: .infinity)
+    
+    Button {
+    } label: {
+    }
+}
+.fixedSize(horizontal: false, vertical: true)
+```
+subview height를 parent height 에 맞추기
