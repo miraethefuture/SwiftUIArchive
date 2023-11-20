@@ -34,4 +34,5 @@ HStack {
 }
 .fixedSize(horizontal: false, vertical: true)
 ```
-subview height를 parent height 에 맞추기
+subview height를 parent height 에 맞추기  
+더 높은 height에 맞춰짐
