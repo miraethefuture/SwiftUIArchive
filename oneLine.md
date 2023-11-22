@@ -65,7 +65,7 @@ HStack {
         }
 }
 .compositingGroup()
-.opacity(isSoldOut ? 0.5 : 0)
+.opacity(isSoldOut ? 0.5 : 1)
 ```
 .compositingGroup()
 그룹이 적용된 뷰 계층 중 최상위 뷰에만 opacity가 적용됨.
