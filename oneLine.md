@@ -49,3 +49,23 @@ ScrollView(showsIndicators: false) {
 위와 같이 스크롤 뷰를 꼭 VStack 바깥쪽에 놓아야 함.
 안쪽에 놓으면 흰 여백이 생김.
 
+🥐 opacity를 부모뷰에만 적용하기
+
+[How to apply SwiftUI opacity to the parent View only?](https://stackoverflow.com/questions/72402274/how-to-apply-swiftui-opacity-to-the-parent-view-only)
+
+```swift
+HStack {
+    VStack {
+        Circle()
+        ...
+    }
+    Image()
+        .overlay {
+            Text() // opacity를 적용하고 싶지 않은 뷰
+        }
+}
+.compositingGroup()
+.opacity(isSoldOut ? 0.5 : 0)
+```
+.compositingGroup()
+그룹이 적용된 뷰 계층 중 최상위 뷰에만 opacity가 적용됨.
