@@ -69,3 +69,9 @@ HStack {
 ```
 .compositingGroup()
 그룹이 적용된 뷰 계층 중 최상위 뷰에만 opacity가 적용됨.
+
+🥐 링크 주소가 파란색으로 나타날때
+```swift
+Text(verbatim: "https://www.instagram.com")
+```
+위와 같이 Text(verbatim: ) 을 사용하면 적용한 컬러로 나타남
