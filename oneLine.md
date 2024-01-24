@@ -75,3 +75,14 @@ HStack {
 Text(verbatim: "https://www.instagram.com")
 ```
 위와 같이 Text(verbatim: ) 을 사용하면 적용한 컬러로 나타남
+
+🥐 optional 타입의 파라미터 하나를 가진 함수 작성 
+```swift
+func displayInfo(of artist: Artist? = nil) {
+    // ...
+}
+
+displayInfo()
+displayInfo(of: artist)
+```
+와 같이 사용할 수 있음
