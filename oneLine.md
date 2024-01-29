@@ -86,3 +86,23 @@ displayInfo()
 displayInfo(of: artist)
 ```
 와 같이 사용할 수 있음
+
+🥐 Optional binding 
+```swift
+struct SomeView: View {
+    var title: String
+    @Binding var showModal: Bool?
+}
+```
+위 스트럭처를 사용 시 showModal을 사용하고 싶지 않을때도 showModal 값을 입력하라는 에러가 남
+```swift
+var showPassword: Binding<Bool>?
+```
+위 형태로 작성하면
+```swift
+showModal?.wrappedValue = false 
+```
+처럼 사용하면서 필요하지 않을 때는 값을 보내지 않을 수 있음
+
+
+
