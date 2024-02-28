@@ -1,3 +1,5 @@
+[코드 출처](https://stackoverflow.com/a/60178361/2660216)
+
 ```swift
 import SwiftUI
 import Combine
@@ -41,4 +43,4 @@ extension View {
 - NotificationCenter는 어떤 이벤트나 상태 변경이 발생했을 때 옵저버 객체들에게 알림을 전달하는 메커니즘
 - 각각의 실행중인 앱은 'default' notification center를 가짐. (목적에 따라, notication center를 생성할 수 있음)
 - NotificationCenter는 Combine 프레임워크의 publisher를 사용하여, 키보드가 나타날때 발생하는 notification 값을 나타냄.
-- .merge(with:)는 두 개의 Publisher를 병합하여 하나의 Publisher로 만듦. 위 코드에서는 키보드가 나타날때와 키보드의 프레임이 변경될 때의 notification을 모두 처리하기 위해 사용됨.
+- .merge(with:)는 두 개의 Publisher를 병합하여 하나의 Publisher로 만듦. 위 코드에서는 키보드가 나타날때와 키보드의 프레임이 변경될 때의 notification을 모두 처리하기 위해 사용됨. 하나의 Subscriber로 여러개의 키보드 이벤트를 처리할 수 있게됨.
